@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>5374(ゴミナシ).jp</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+      <button type="button" id="search-btn" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-question-sign" aria-hidden="true">&nbsp;</span>ゴミの分別種別を調べる</button>
+  <style id="accordion-style" type="text/css"></style>
+  <div id="accordion"></div>
+  <label for="name_area">選択された地域：</label>
+  <select name="name_area" class="form-control" id="select_area"></select>
+
+  <label for="name_font">表示する文字サイズ：</label>
+  <select name="name_font" class="form-control" id="select_font_size">
+    <option value="中">標準サイズ</option>
+    <option value="大">大きな文字</option>
+    <option value="特">特大文字</option>
+    <option value="小">小さな文字</option>
+  </select>
+
+  <div class="accordion" id="accordion3">
+    <div class="accordion-group">
+      <!-- 家電リサイクル法対象品#04 -->
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse04_0">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+        家電リサイクル法対象品</a>
+      </div>
+      <div id="collapse04_0" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            <h3 class="red">※市では収集・処理を行えません。</h3>
+            <h3>エアコン、テレビ、冷蔵庫、冷凍庫、洗濯機、衣類乾燥機</h2>
+            <p>これらの特定家庭用機器は法律でリサイクルが義務付けられています。</p>
+            <h3>処分方法</h3>
+            <ol>
+            <li>買い換える場合は、新しい製品を購入する販売店に依頼する。</li>
+            <li>処分する家電品を購入した販売店に依頼する。</li>
+            <li>家電リサイクル券対応業者へ収集運搬を依頼する。</li>
+            <li>メーカーの指定引取場所に自分で搬入する。その場合は事前に郵便局・ゆうちょ銀行で家電リサイクル券を購入のうえ、メーカー指定取引場所に連絡してください。</li>
+            </ol>
+            <p>家電リサイクル券対応業者及びメーカー指定取引場所について、ご不明な点がございましたら、資源循環課までお問い合わせください。</p>
+          </div>
+        </div>
+      </div>
+      <!-- パソコンの出し方#5 -->
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse05_0">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+        パソコンの出し方</a>
+      </div>
+      <div id="collapse05_0" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            <h3 class="red">※市では収集・処理を行えません。</h3>
+            <h3>対象となるパソコン機器</h2>
+            <ul>
+            <li>デスクトップパソコン本体</li>
+            <li>ノートブックパソコン</li>
+            <li>CRTディスプレイ</li>
+            <li>液晶ディスプレイ</li>
+            </ul>
+            <p>購入時の標準付属品（キーボード、マウス、スピーカー、ケーブルなど）はパソコン本体やディスプレイと一緒に出すことができます。</p>
+            <h3>処分方法</h3>
+            <ol>
+            <li>お持ちのパソコンのメーカーへ連絡し申し込みをしてください。</li>
+            </ol>
+            <p>特定家庭用機器及びパソコンの処分に関してご不明な点がございましたら、資源循環課までお問い合わせください。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 回収しないもの#6 -->
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse06_0">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+        回収しないもの</a>
+      </div>
+      <div id="collapse06_0" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            <h3 class="red">※市では収集・処理を行えません。</h3>
+            <ul>
+              <li>石</li>
+                  <p>専門業者へお問い合わせください</p>
+              <li>衣類乾燥機</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>エアコン</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>エタノール</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>オイル（エンジン用）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>オートバイ･オートバイ部品</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>温水器（電動・ソーラー式）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>か</h4>
+            <ul>
+              <li>かわら</li>
+                  <p>専門業者へお問い合わせください</p>
+              <li>クーラー</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>車椅子（電動）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>コンクリート</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>さ</h4>
+            <ul>
+              <li>サーフボード</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>自転車（電動自転車）</li>
+                  <p>販売店にお問い合わせください</p>
+              <li>自動車部品（純正品・ホイールなど）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>消火器・スプレー式消火器（薬品が残っているもの）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>石膏ボード</li>
+                  <p>専門業者にお問い合わせください</p>
+              <li>セメント</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>洗濯機</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>ソファーベッド（スプリングあり）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>た</h4>
+            <ul>
+              <li>タイヤ（バイク、車）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>耐火金庫</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>タイル</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>注射器（針）</li>
+                  <p>医療機関等に返す<br />インスリン注射器・血糖値測定器用針含む</p>
+              <li>漬物石（プラコーティング）</li>
+                  <p>専門業者にお問い合わせください</p>
+              <li>土</li>
+                  <p>専門業者にお問い合わせください</p>
+              <li>テレビ</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>灯油</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>な</h4>
+            <ul>
+              <li>農薬（容器も含む）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>は</h4>
+            <ul>
+              <li>パソコン（ディスプレイ含む）</li>
+                  <p>製造メーカーにお問い合わせください</p>
+              <li>バッテリー</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>ピアノ</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>ブロック</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>風呂釜</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>ボウリングの球</li>
+                  <p>湘南ボウルで有料で処分（電話 44－5131）</p>
+              <li>ボディーボード</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>ま</h4>
+            <ul>
+              <li>マットレス（スプリング入り）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>や</h4>
+            <ul>
+              <li>薬品（化学薬品・容器も含む）</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>ら</h4>
+            <ul>
+              <li>冷蔵庫・冷凍庫</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+              <li>レンガ</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>わ</h4>
+            <ul>
+              <li>ワインセラー</li>
+                  <p>販売店、専門業者にお問い合わせください</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 粗大ゴミ#7 -->
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse07_0">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+        粗大ゴミ</a>
+      </div>
+      <div id="collapse07_0" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            <h4>あ</h4>
+            <ul>
+              <li>アコーディオンカーテン</li><p>50cm未満は燃やすごみ</p>
+              <li>網戸</li><p>50cm未満は燃えないごみ</p>
+              <li>一輪車</li><p>50ｃｍ未満は燃えないごみ</p>
+              <li>ウォシュレット</li><p>50cm未満は燃えないごみ</p>
+              <li>エレキギター</li><p></p>
+              <li>オイルヒーター</li><p>50cm未満は燃えないごみ</p>
+              <li>応接いす</li><p>２人掛け以上で１ｍ以上は大型粗大ごみ</p>
+            </ul>
+            <h4>か</h4>
+            <ul>
+              <li>ガス（コンロ・レンジ･オーブン）</li><p>50cm未満は燃えないごみ</p>
+              <li>カーペット</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a></p>
+              <li>カラーボックス</li><p>50cm未満は燃やすごみ</p>
+              <li>ギター</li><p></p>
+              <li>キックボード</li><p>50cm未満は燃えないごみ<br />※水泳用具はビート板参照</p>
+              <li>キャリヤ（自動車用）</li><p></p>
+              <li>鏡台</li><p></p>
+              <li>空気清浄機</li><p>50cm未満は燃えないごみ</p>
+              <li>車椅子</li><p></p>
+              <li>下駄箱</li><p>１ｍ以上は大型粗大ごみ</p>
+              <li>ござ</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a></p>
+              <li>こたつ</li><p>こたつ板と一緒に出す場合は１点とする</p>
+              <li>こたつ板</li><p>こたつと一緒に出す場合は１点とする</p>
+              <li>こたつ布団</li><p>45リットルの袋に入る場合は燃やすごみ</p>
+              <li>コピー機（家庭用）</li><p>50cm未満は燃えないごみ</p>
+              <li>ゴルフセット</li><p>バッグとクラブのセットです</p>
+              <li>ゴルフバッグ（バッグだけの場合）</li><p></p>
+            </ul>
+            <h4>さ</h4>
+            <ul>
+              <li>サイドボード</li><p>１ｍ以上は大型粗大ごみ</p>
+              <li>サマーベッド</li><p>50cm未満は燃えないごみ</p>
+              <li>自転車</li><p></p>
+              <li>シャンデリア</li><p>50cm未満は燃えないごみ</p>
+              <li>じゅうたん</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a></p>
+              <li>除湿器</li><p>※フロンガス入りで50ｃｍ未満の物は臨時ごみ、フロンガスなしで50ｃｍ未満の物は燃えないごみ</p>
+              <li>食器洗い機</li><p>50cm未満は燃えないごみ</p>
+              <li>食器乾燥機</li><p>50cm未満は燃えないごみ</p>
+              <li>食器棚</li><p>１ｍ以上は大型粗大ごみ</p>
+              <li>すがたみ</li><p></p>
+              <li>スキー板</li><p>ストックを一緒に出した場合１点とする</p>
+              <li>スケートボート</li><p>50cm未満は燃えないごみ</p>
+              <li>スコップ（金属部分あり）</li><p>50cm未満は燃えないごみ</p>
+              <li>スコップ（プラスチック製）</li><p>50cm未満は燃やすごみ</p>
+              <li>スチール製物置（解体したものに限る）</li><p>床面積が1.65㎡以上3.3㎡未満は大型粗大ごみ</p>
+              <li>スーツケース</li><p>50cm未満は燃やすごみ</p>
+              <li>ステレオ（セット・単品）</li><p>50cm未満は燃えないごみ</p>
+              <li>ストーブ（石油・ガス・電気）</li><p>50cm未満は燃えないごみ</p>
+              <li>すのこ</li><p><a href="./data/attention.html" data-featherlight="ajax">【注１】【注２】を参照</a></p>
+              <li>スノーボード</li><p></p>
+              <li>ズボンプレッサー</li><p>50cm未満は燃えないごみ</p>
+              <li>扇風機</li><p>50cm未満は燃えないごみ</p>
+            </ul>
+            <h4>た</h4>
+            <ul>
+              <li>たたみ</li><p>自分で交換したものに限ります</p>
+              <li>卓球台</li><p></p>
+              <li>建具</li><p></p>
+              <li>棚（収納棚）</li><p>50cm未満で金属製は燃えないごみ<br />木製等は燃やすごみ<br />1ｍ以上は大型粗大ごみ</p>
+              <li>チェスト</li><p>50cm未満は燃やすごみ<br />１ｍ以上は大型粗大ごみ</p>
+              <li>茶箱</li><p>50cm未満は燃やすごみ</p>
+              <li>チャイルドシート</li><p>50cm未満は燃やすごみ</p>
+              <li>庭園灯</li><p>50cm未満は燃えないごみ</p>
+              <li>テーブル</li><p>天板の大きさが1.2㎡以上で一辺の長さが１ｍ以上は大型粗大ごみ</p>
+              <li>電気（ホット）カーペット・電気マット</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a><br />電気のコードを切ってください</p>
+              <li>電子レンジ</li><p>50cm未満は燃えないごみ</p>
+              <li>テント</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a><br />棒等金属部分は燃えないごみ</p>
+              <li>トランクケース（大型旅行カバン）</li><p></p>
+              <li>ドレッサー（化粧台）</li><p></p>
+            </ul>
+            <h4>な</h4>
+            <ul>
+              <li>ネットボックス・折りたたみ式ごみネット</li><p></p>
+            </ul>
+            <h4>は</h4>
+            <ul>
+              <li>パソコンデスク</li><p>50cm未満は燃やすごみ、金属製は燃えないごみ</p>
+              <li>バーベキューコンロ</li><p>50cm未満は燃えないごみ</p>
+              <li>ビーチパラソル</li><p></p>
+              <li>ファックス（家庭用）</li><p>50cm未満は燃えないごみ</p>
+              <li>ファンヒーター（石油･ガス）</li><p>50cm未満は燃えないごみ</p>
+              <li>ふとん（綿・羽毛・羊毛）</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a></p>
+              <li>ブラインド</li><p>50cm未満は燃えないごみ</p>
+              <li>ベッド台（折りたたみベッド含む）</li><p>１ｍ以上は大型粗大ごみ</p>
+              <li>ベビーカー・乳母車</li><p>Ａ型・Ｂ型･バギー</p>
+              <li>ベビーバス</li><p></p>
+              <li>ホットカーペット</li><p>45リットルの袋に入る場合は燃やすごみ<br /><a href="./data/attention.html" data-featherlight="ajax">【注４】を参照</a><br />電気のコードを切ってください</p>
+            </ul>
+            <h4>ま</h4>
+            <ul>
+              <li>マットレス（スプリングなし）</li><p></p>
+              <li>ミシン</li><p>50cm未満は燃えないごみ</p>
+              <li>木製物置（解体したものに限る）</li><p>※スチール製物置の出し方参照</p>
+              <li>物干し台（１組）</li><p>コンクリートは、販売店、専門業者にお問い合わせください</p>
+            </ul>
+            <h4>や</h4>
+            <ul>
+              <li>よしず</li><p>50cm未満は燃やすごみ</p>
+            </ul>
+            <h4>ら</h4>
+            <ul>
+              <li>レンジ台</li><p></p>
+              <li>ロッカー（家庭用）</li><p>１ｍ以上は大型粗大ごみ</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- 5374.jp#3 -->
+      <div class="accordion-heading">
+        <a class="accordion-toggle-top" data-toggle="collapse" data-parent="#accordion3" href="#collapse03_0">
+        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+        5374.jp（鎌倉版）について</a>
+      </div>
+      <div id="collapse03_0" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <div id="help">
+            <p>ゴミの問題は、どの地域でも深刻になりつつあります。（NPO法人）鎌倉シチズンネット（KCN）ではCode for Kanazawaで開発されたソフトウエアを鎌倉市の条件に合わせました。先ずは正しいゴミの捨て方に注目しました。目的と使い方は、とてもシンプルです。</p>
+            <h2>目的</h2>
+            <p>「いつ、どのゴミが収集されているのか？」例えばお引っ越しをされた場合や、新しく鎌倉市に住むことになった時、このアプリを使えば、すぐに分かるようにデザインされています。また、直近の月１回の資源ごみ回収日も表示されるので忘れることがありません。</p>
+            <h2>使い方</h2>
+            <h3>地域（字名）を選択</h3>
+            <p>最初にお住まいの地域（字名）をクリーンステーション対応で選択して下さい。２回目からは前回選択したものが自動的に表示されます。</p>
+            <h3>色でゴミのジャンルを表示</h3>
+            <p>一番近いゴミの日とジャンルを上から順に表示しています。</p>
+            <h3>捨てる事が可能なゴミ</h3>
+            <p>ゴミのジャンルをタップすると、捨てることが可能なゴミの一覧を見ることができます</p>
+            <h3>自動更新</h3>
+            <p>ゴミ収集日は自動的に更新されます。</p>
+            <div id="caption">
+              <h4>提供されるゴミ情報について</h4>
+              <p>鎌倉市が公開しているデータを用いてKCNがアプリに実装しました。「製品プラスチック」の資源ごみとしての回収は平成27年1月15日から開始の予定です。</p>
+              <h4>ライセンスについて</h4>
+              <p>本アプリの原著作権はCode for Kanazawaに帰属します。鎌倉市向けに改変した部分の著作権はKCNに帰属します。</p>
+            </div>
+
+            <div id="cfk">
+              <h3>Code for Kanazawaについて</h3>
+              <p>コードで、世界をHappyに。<br />
+              各地域には様々な課題があり、解決するためのコミュニティ（団体）も数多くあります。<br />
+              課題の中には、ITやデザインの力で解決できるものも多くありますが、全てのコミュニティにそのスキル（技術）が備わっているわけではありません。<br /><br />
+              Code for Kanazawa（CfK）は、市民の課題を集め、その課題を整理・分析した上で、メンバーが実際に課題解決となるソフトウェアやハードウェア（仕組みや方法）を開発します。<br />
+              私たちは、デザインをして、ソフトウェアコードを書き、課題を解決するサービスを完成させるのです。さらに、そのサービスを提供し続ける力も持ちます。<br /><br />
+              CfKは市民のための組織です。行政や民間企業の影響を受けずに中立・公益の立場から物事を判断するよう心がけています。<br /><br />
+              CfK公式サイト<br />
+              <a href="http://www.codeforkanazawa.org/" style=" color: #FF0000;text-decoration: underline;">http://www.codeforkanazawa.org/</a><br />
+              KCN公式サイト<br />
+              <a href="http://www.kcn-net.org/org/" style=" color: #0000FF;text-decoration: underline;">http://www.kcn-net.org/org/</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="page-top">
+      <p><a id="move-page-top">▲スクロールを戻す</a></p>
+  </div>
+
+  <!- Featherlight ->
+  <link href="js/featherlight-1.0.3/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <!-- JavaScript plugins (requires jQuery) -->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!- Featherlight ->
+  <script src="js/featherlight-1.0.3/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond)
+  <script src="js/respond.js"></script>
+  -->
+  <!-- ブックマークお勧めポップアップ追加-->
+  <script src="js/bookmark-bubble/bookmark_bubble.min.js"></script>
+  <script src="js/bookmark-bubble/example/example.min.js"></script>
+  <script src="js/setting.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+  /*
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43926409-1', '5374.jp');
+  ga('send', 'pageview');
+  */
+  </script>
+  </body>
+</html>
